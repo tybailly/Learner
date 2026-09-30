@@ -1,0 +1,45 @@
+﻿@model AssetPortal.Models.Asset
+
+<h1>Create Asset</h1>
+
+
+
+<form method="post">
+
+    <span asp-validation-for="AssetTag"
+          class="text-danger">
+    </span>
+
+    <div class="mb-3">
+        <label>Asset Tag</label>
+        <input asp-for="AssetTag" class="form-control" />
+    </div>
+
+    
+
+    <span asp-validation-for="AssetName"
+          class="text-danger">
+    </span>
+
+    <div class="mb-3">
+        <label>Asset Name</label>
+        <input asp-for="AssetName" class="form-control" />
+    </div>
+
+    
+    <span asp-validation-for="Owner"
+          class="text-danger">
+    </span>
+
+    <div class="mb-3">
+        <label>Owner</label>
+        <input asp-for="Owner" class="form-control" />
+    </div>
+
+    
+    <button type="submit"
+            class="btn btn-success">
+        Save
+    </button>
+
+</form>

@@ -1,0 +1,26 @@
+﻿@model AssetPortal.Models.Asset
+
+<h1>Asset Details</h1>
+
+<dl class="row">
+    <dt class="col-sm-3">ID</dt>
+    <dd class="col-sm-9">@Model.Id</dd>
+
+    <dt class="col-sm-3">Asset Tag</dt>
+    <dd class="col-sm-9">@Model.AssetTag</dd>
+
+    <dt class="col-sm-3">Name</dt>
+    <dd class="col-sm-9">@Model.AssetName</dd>
+
+    <dt class="col-sm-3">Owner</dt>
+    <dd class="col-sm-9">@Model.Owner</dd>
+
+    <dt class="col-sm-3">Purchase Date</dt>
+    <dd class="col-sm-9">@Model.PurchaseDate.ToShortDateString()</dd>
+</dl>
+
+<a asp-controller="Assets"
+   asp-action="Index"
+   class="btn btn-secondary">
+    Back to Asset List
+</a>
